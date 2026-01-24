@@ -163,7 +163,14 @@ public class BallController : MonoBehaviour
             case ControlMode.Constraint:
             {
                 // HACK: 調査）一度設定したはずが、位置がずれるので毎フレーム位置を合わせている
-                transform.SetLocalPositionAndRotation(Vector3.zero, Quaternion.identity);
+                transform.localPosition = Vector3.zero;
+                transform.rotation = Quaternion.identity;
+            }
+            break;
+
+            case ControlMode.Toss:
+            {
+                transform.rotation = Quaternion.identity;
             }
             break;
 
@@ -360,7 +367,8 @@ public class BallController : MonoBehaviour
         CurControlMode = ControlMode.Constraint;
 
         transform.SetParent(parentTransform);
-        transform.SetLocalPositionAndRotation(Vector3.zero, Quaternion.identity);
+        transform.localPosition = Vector3.zero;
+        transform.rotation = Quaternion.identity;
     }
 
     public void Toss(in Vector3 tossPosition, in Vector3 hitPosition, float timeToServe)
@@ -370,6 +378,8 @@ public class BallController : MonoBehaviour
 
         // ワールド座標での制御にする
         transform.SetParent(null);
+        transform.localPosition = Vector3.zero;
+        transform.rotation = Quaternion.identity;
 
         // 情報を保持する
         tossStartPos = tossPosition;
@@ -671,6 +681,13 @@ public class BallController : MonoBehaviour
             Gizmos.DrawSphere(dropPos, 0.1f);
         }
 
+        // 回転軸の確認
+        {
+            var p = this.ballModelObject.transform.position;
+            var axis = hitSpinAxis;
+
+            Gizmos.DrawLine(p, p + axis);
+        }
     }
 
 #endif
