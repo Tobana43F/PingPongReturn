@@ -1,0 +1,17 @@
+	
+
+	DST-TowerDefenseTheme
+
+	Created by DST
+
+			------------------------------
+
+	License: (Creative Commons Zero, CC0)
+	http://creativecommons.org/publicdomain/zero/1.0/
+
+			------------------------------
+
+	Modified
+
+	一部をクリッピングしループ処理を施しました。
+

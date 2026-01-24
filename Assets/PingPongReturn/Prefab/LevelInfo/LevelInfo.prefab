@@ -1,0 +1,72 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &596914598384038119
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4047070801108393712}
+  - component: {fileID: 4669144319631188534}
+  m_Layer: 0
+  m_Name: LevelInfo
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4047070801108393712
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 596914598384038119}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4669144319631188534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 596914598384038119}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da095d2cc1b160e48a5979d5bddad6d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ballCount: 10
+  levelServeInfos:
+  - serveInfo: {fileID: 4066107119812615604, guid: 540e03800f025d542a31fc997d47c67b,
+      type: 3}
+    frequency: 10
+  - serveInfo: {fileID: 3874703106003043525, guid: 895259c257ab2bb448f7c4c7cbd4f645,
+      type: 3}
+    frequency: 20
+  - serveInfo: {fileID: 4128542756347584371, guid: fd947c2b18f325140a22a8e54cc52eac,
+      type: 3}
+    frequency: 10
+  - serveInfo: {fileID: 4774899100766998993, guid: 4a2798d96a100f944ac8dd8ec50ead2c,
+      type: 3}
+    frequency: 20
+  - serveInfo: {fileID: 6644539281190920813, guid: 7a775a8f77542784f8d9f9c81f79e4fb,
+      type: 3}
+    frequency: 15
+  - serveInfo: {fileID: 5301591730519092058, guid: 8b51611a9589db744a24ac016c285dec,
+      type: 3}
+    frequency: 15
+  - serveInfo: {fileID: 5341761886221795985, guid: b86ba8b2e20c35843aa5d29a0f5df7b6,
+      type: 3}
+    frequency: 5
+  - serveInfo: {fileID: 1308414101397215646, guid: 762268a154c651948a56ef63800277bc,
+      type: 3}
+    frequency: 5
