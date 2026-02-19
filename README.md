@@ -17,6 +17,8 @@
 他の卓球ゲームであまり取りだたされていない「回転」に注目。  
 「相手のサーブを見切って、コースを狙って返球する。」という卓球の気持ちよさを表現しました。
 
+<img height="300" alt="GamePlay" src="https://github.com/user-attachments/assets/1b8f557f-a6a8-4c31-a3b4-c0f21ec19506" />
+
 ## 🛠️技術的な見どころ
 
 ### Nintendo Switch の Joy-Conを使った直観的な操作
